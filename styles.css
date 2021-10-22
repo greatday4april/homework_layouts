@@ -38,6 +38,8 @@
     border: 1px solid green;
     margin: 5px;
     clear: both;
+    background-image: url("hero.png");
+    background-size: cover;
 }
 #z-bottom {
     width: '100%';
