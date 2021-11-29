@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <div id="top">Object Oriented Programming</div>
+    <div>
+      <div id="left">
+        <img
+          src="encapsulation.png"
+          height="90%"
+        />
+      </div>
+      <div id="right">
+        Encapsulation refers bundling all characterics and functionalities related to one entity into one object. In the case of our calculator, our calculator itself is one kind of encapsulation because it wraps all its functionalities in the Calculator class. And another example is we use calculation as one unit and bundles the input elements, the operation type and output. For example: https://github.com/greatday4april/calc2/blob/calc_part2/calculator/calculator.py#L11-L30
+      </div>
+    </div>
+    <div>
+      <div id="left">
+        <img
+          src="inheritance.png"
+          width="90%"
+        />
+      </div>
+      <div id="right">
+        Inheritance represents a "is a" relationship. For example in the calculator case, each of "Addition", "Subtraction", "Multiplication" and "Division" is one calculation. As you can see from https://github.com/greatday4april/calc2/tree/calc_part2/calc, each type of calculation has a classed named by it and inherits Calculation class, meaning they are all calculation types. And we call the class inherits "child class", the class get inherited "base class" or "parent class". Addition is the child class, while Calculation is the parent / base class here.
+      </div>
+    </div>
+    <div>
+      <div id="left">
+        <img
+          src="polymorphism.png"
+          width="90%"
+        />
+      </div>
+      <div id="right">
+        In programming, polymorphism means different child classes may have different behavior for the same function. For example, here get_result is a function that every child class of Calculation class has. But when it was used, it can have different behaviors depend on whether this calculation is an Addition or Multiplication, etc. Which is expected as different calculation is supposed to output different result.
+      </div>
+    </div>
+    <div>
+      <div id="left">
+        <img
+          src="abstraction.png"
+          height="90%"
+        />
+      </div>
+      <div id="right">
+        Abstraction means the class doesn't refer to a concrete type but only refers to an abstract category. For example, if we have a Fruit class it will be abstract. In our calculator example, Calculation is an abstract class and cannot initialized directly because it doesn't make sense to have a calculation without the calculation type defined. For example, in our simple calculator, it must be one of Addition, Subtraction, Multiplication or Division.
+      </div>
+    </div>
+  </body>
+</html>
