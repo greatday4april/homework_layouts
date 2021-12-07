@@ -4,40 +4,50 @@
     <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <body>
-    <div id="top">Late 1990s: Microsoft vs Netscape</div>
+    <div id="top">AAA Testing</div>
     <div>
       <div id="left">
         <img
-          src="https://miro.medium.com/max/600/0*t1iDCj-iBzDQ5_pY"
+          src="https://miro.medium.com/max/1400/1*jLgrNjNC4vglYJKsmpRqmQ.png"
           width="100%"
-          height="100%"
         />
       </div>
       <div id="right">
-        After the first internet browser (WorldWideWeb, known today as Nexus) launched, numerous companies launched their own internet browsers. One of them, Mosaic, dominated the browser market share for over a year after its release in 1993. Netscape stemmed from its success in 1994, and became the leading internet browser by 1995. In that same year, however, Microsoft launched Internet Explorer v1.0, and it looked as though Netscape would overshadow it just as it did all its other competitors.
+        AAA(Arrange-Act-Assert) pattern is standard for testing in software engineer industry. Basically it means a test needs to be composed of these 3 stages: Arrange means having setup, such as having mocks etc; then Act, basically invocate the method to be tested; and the last step is to verify the result meets expectation after the act (Assert).
       </div>
     </div>
     <div>
       <div id="left">
         <img
-          src="https://mindblowingblog.com/wp-content/uploads/2019/09/browser_wars.jpg"
+          src="pytest.png"
           width="100%"
-          height="100%"
         />
       </div>
       <div id="right">
-        In 1994, the same organization, then known as Netscape Communications Corporation, released Netscape Navigator. This name may perk up some ears, and rightfully so. It was one of the first browsers to use “JavaScript”, one of most in-use programming languages today, and still the industry standard for scripting languages. Netscape Navigator became a household name as a consumer access point for using the internet, so much so that “Netscaping” became common vernacular, synonymous with “surfing the web".
+        Testing is super important because it helps us verify the code we've written matches our expectation and has no bug. It also prevents other people from breaking the code while they are making changes. This allows collaboration between more developers on the same project.
       </div>
     </div>
     <div>
       <div id="left">
         <img
-          src="https://images.csmonitor.com/csmarchives/2008/01/CNETSCAPE_g3_L.gif?alias=standard_900x600nc"
+          src="test-example.png"
           width="100%"
-          height="100%"
         />
       </div>
-      <div id="right">In the mid 1990s, the internet browser was a very new phenomenon, and most consumers would never think to replace the default browser on their operating system. Luckily for Microsoft, most operating systems at the time were Windows, and the default browser was Internet Explorer. </div>
+      <div id="right">
+        <a href="https://github.com/greatday4april/calc2/blob/calc_part2/tests/calculator_test.py#L26-L33">This</a> is an example of how tests are usually implemented. The test "test_calculator_add" does clear_history as the setup (Arrange) to clear history of the calculator to avoid side effects. And then perform actions, aka, adding different numbers. (Act) And then verify the results to be expected values. (Assert)
+      </div>
+    </div>
+    <div>
+      <div id="left">
+        <img
+          src="https://user-images.githubusercontent.com/60717299/144320178-4df43bbc-fb21-4d18-b6b8-1e4338b61bc4.png"
+          width="100%"
+        />
+      </div>
+      <div id="right">
+        <a href="https://github.com/greatday4april/calc2/blob/calc_csv/main.py#L27-L28">https://github.com/greatday4april/calc2/blob/calc_csv/main.py#L27-L28</a> is a code example where we read input values from an external file, in this case CSV file as test cases and perform operations based on the values within the CSV file, and then output the results into a different file, as well as outputing errors and verify against the expected values.
+      </div>
     </div>
   </body>
 </html>
