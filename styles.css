@@ -58,10 +58,32 @@
 }
 #header {
   font-size: 32px;
+  width: 400px;
+}
+#first {
+  width: 200px;
+}
+#second {
+  width: 400px;
+}
+#first-topic {
+  width: 200px;
+}
+#third {
+  width: 200px;
+}
+#forth {
+  width: 200px;
+}
+#fifth {
+  width: 200px;
 }
 #box-title {
   font-size: 32px;
   margin-bottom: 10px;
+}
+#validator{
+  text-align: center;
 }
 footer {
   text-align: center;
